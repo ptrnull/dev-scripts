@@ -150,7 +150,8 @@ else
       qemu-kvm \
       redhat-lsb-core \
       virt-install \
-      unzip
+      unzip \
+      ipmitool
 
     # Install python packages not included as rpms
     sudo pip install \
