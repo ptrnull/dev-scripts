@@ -67,7 +67,8 @@ sudo yum -y install \
   patch \
   psmisc \
   vim-enhanced \
-  wget
+  wget \
+  ipmitool
 
 if [ "${RHEL8}" = "True" ] ; then
     sudo subscription-manager repos --enable=ansible-2-for-rhel-8-x86_64-rpms
@@ -86,8 +87,7 @@ if [ "${RHEL8}" = "True" ] ; then
       qemu-kvm \
       virt-install \
       unzip \
-      network-scripts \
-      ipmitool
+      network-scripts
 
     sudo pip3 install yq
 
@@ -150,8 +150,7 @@ else
       qemu-kvm \
       redhat-lsb-core \
       virt-install \
-      unzip \
-      ipmitool
+      unzip
 
     # Install python packages not included as rpms
     sudo pip install \
